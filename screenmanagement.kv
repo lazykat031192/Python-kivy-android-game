@@ -1,0 +1,313 @@
+#: import FadeTransition kivy.uix.screenmanager.FadeTransition
+#:import secondscreen secondscreen
+#:import thirdscreen thirdscreen
+#:import fourthscreen fourthscreen
+<ScreenManagement>:
+	transition: FadeTransition()
+	MainScreen:
+	SecondScreen:
+	ThirdScreen:
+	FourthScreen:
+<MainScreen>:
+    name:'main'
+    AnchorLayout:
+        AnchorLayout:
+            anchor_x: 'center'
+            anchor_y: 'top'
+            Introduction:
+                id:_introduction
+        AnchorLayout:
+            anchor_x: 'center'
+            anchor_y: 'bottom'   
+            Play:
+                id:_play
+        AnchorLayout:
+            anchor_x: 'right'
+            anchor_y: 'bottom'      
+            Exit:
+                Button:
+                    text:'Exit'
+                    size_hint: (0.05,0.05) 
+                    on_press: app.stop()
+#chia man hinh chinh thanh 2 phan, phan 1 anchorlayout top, center 
+
+<SecondScreen>:
+    name: "second"
+    BoxLayout:
+        orientation: 'vertical'
+        GridLayout: 
+            cols: 3
+            size_hint:1,0.8
+            padding: 80 #do rong duong vien
+            Button:
+                id: button1
+                text:''
+            Button:
+                id: button2
+                text:''
+            Button:
+                id: button3
+                text:''
+            Button:
+                id: button4
+                text:''
+            Button:
+                id: button5
+                text:''
+            Button:
+                id: button6
+                text:''
+            Button:
+                id: button7
+                text:''
+            Button:
+                id: button8
+                text:''
+            Button:
+                id: button9
+                text:''
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint: 1,0.2 
+            Label:
+                size_hint:0.2,1  
+                text: 'back to menu'
+                id: back
+            Label:
+                size_hint: 0.6,1
+                id: again
+                text:''
+            Label:
+                size_hint:0.2,1
+                id: next
+                text:'' 
+
+<ThirdScreen>:
+    name:'third'
+    BoxLayout:
+        orientation: 'vertical'
+        GridLayout: 
+            cols: 5
+            size_hint:1,0.8
+            padding: 80
+            Button:
+                id: butt1
+                text:''
+            Button:
+                id: butt2
+                text:''
+            Button:
+                id: butt3
+                text:''
+            Button:
+                id: butt4
+                text:'' 
+            Button:
+                id: butt5
+                text:'' 
+            Button:
+                id: butt6
+                text:'' 
+            Button:
+                id: butt7
+                text:'' 
+            Button:
+                id: butt8
+                text:'' 
+            Button:
+                id: butt9
+                text:'' 
+            Button:
+                id: butt10
+                text:'' 
+            Button:
+                id: butt11
+                text:'' 
+            Button:
+                id: butt12
+                text:'' 
+            Button:
+                id: butt13
+                text:'' 
+            Button:
+                id: butt14
+                text:''
+            Button:
+                id: butt15
+                text:''
+            Button:
+                id: butt16
+                text:''
+            Button:
+                id: butt17
+                text:''
+            Button:
+                id: butt18
+                text:''
+            Button:
+                id: butt19
+                text:''
+            Button:
+                id: butt20
+                text:''
+            Button:
+                id: butt21
+                text:''
+            Button:
+                id: butt22
+                text:''
+            Button:
+                id: butt23
+                text:''
+            Button:
+                id: butt24
+                text:''
+            Button:
+                id: butt25
+                text:''
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint: 1,0.2 
+            Label:
+                size_hint:0.2,1  
+                text: 'back to menu'
+                id: back  
+            Label:
+                size_hint: 0.6,1
+                id: again
+                text:''
+            Label:
+                size_hint:0.2,1
+                id: next
+                text:'' 
+<FourthScreen>:
+    name:'fourth'
+    BoxLayout:
+        orientation: 'vertical'
+        GridLayout: 
+            cols: 6
+            size_hint:1,0.8
+            padding: 80
+            Button:
+                id: butt1
+                text:''
+            Button:
+                id: butt2
+                text:''
+            Button:
+                id: butt3
+                text:''
+            Button:
+                id: butt4
+                text:'' 
+            Button:
+                id: butt5
+                text:'' 
+            Button:
+                id: butt6
+                text:'' 
+            Button:
+                id: butt7
+                text:'' 
+            Button:
+                id: butt8
+                text:'' 
+            Button:
+                id: butt9
+                text:'' 
+            Button:
+                id: butt10
+                text:'' 
+            Button:
+                id: butt11
+                text:'' 
+            Button:
+                id: butt12
+                text:'' 
+            Button:
+                id: butt13
+                text:'' 
+            Button:
+                id: butt14
+                text:''
+            Button:
+                id: butt15
+                text:''
+            Button:
+                id: butt16
+                text:''
+            Button:
+                id: butt17
+                text:''
+            Button:
+                id: butt18
+                text:''
+            Button:
+                id: butt19
+                text:''
+            Button:
+                id: butt20
+                text:''
+            Button:
+                id: butt21
+                text:''
+            Button:
+                id: butt22
+                text:''
+            Button:
+                id: butt23
+                text:''
+            Button:
+                id: butt24
+                text:''
+            Button:
+                id: butt25
+                text:''
+            Button:
+                id: butt26
+                text:''
+            Button:
+                id: butt27
+                text:''
+            Button:
+                id: butt28
+                text:''
+            Button:
+                id: butt29
+                text:''
+            Button:
+                id: butt30
+                text:''
+            Button:
+                id: butt31
+                text:''
+            Button:
+                id: butt32
+                text:''
+            Button:
+                id: butt33
+                text:''
+            Button:
+                id: butt34
+                text:''
+            Button:
+                id: butt35
+                text:''
+            Button:
+                id: butt36
+                text:''
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint: 1,0.2
+            Label:
+                size_hint:0.2,1  
+                text: 'back to menu'
+                id: back   
+            Label:
+                size_hint: 0.6,1
+                id: again
+                text:''
+            Label:
+                size_hint:0.2,1
+                id: next
+                text:'' 
